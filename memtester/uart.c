@@ -1,3 +1,18 @@
+/*
+ * memtester version 4
+ *
+ * Very simple but very effective user-space memory tester.
+ * Originally by Simon Kirby <sim@stormix.com> <sim@neato.org>
+ * Version 2 by Charles Cazabon <charlesc-memtester@pyropus.ca>
+ * Version 3 not publicly released.
+ * Version 4 rewrite:
+ * Copyright (C) 2004-2020 Charles Cazabon <charlesc-memtester@pyropus.ca>
+ * Copyright (C) 2026 Spalishe <ynororah@gmail.com>
+ * Licensed under the terms of the GNU General Public License version 2 (only).
+ * See the file LICENSE for details.
+ * Code was modified
+ */
+
 #define UART_BASE 0x10000000
 
 #define UART_THR ((volatile unsigned char *)(UART_BASE + 0))

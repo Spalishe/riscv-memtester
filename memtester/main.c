@@ -1,4 +1,19 @@
-
+/*Copyright (C) 2026  Spalishe
+ *
+ *    This program is free software; you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation; either version 2 of the License, or
+ *    (at your option) any later version.
+ *
+ *    This program is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    GNU General Public License for more details.
+ *
+ *    You should have received a copy of the GNU General Public License along
+ *    with this program; if not, write to the Free Software Foundation, Inc.,
+ *    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ */
 
 void uart_init();
 void uart_gets(char *s, unsigned int size);
@@ -47,6 +62,10 @@ int main() {
   unsigned long free_mem = (unsigned long)&_free_memory_start;
   unsigned long mem_start = (unsigned long)&_memory_start;
   printf("Memtester\n");
+  printf("Copyright (C) 2001-2024 Charles Cazabon.\n");
+  printf("Copyright (C) 2026 Spalishe.\n");
+  printf("Licensed under the GNU General Public License version 2 (only).\n");
+  printf("\n");
   printf("Region start: 0x%x\n", (void *)free_mem);
 
   printf("Region offset: 0x%x\n", free_mem - mem_start);
